@@ -1,0 +1,82 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(Imagens/coding-on-laptop.jpg) no-repeat center fixed;
+	-moz-background: cover;
+	background-size: cover;
+	font-family: "Arial";
+	color: #fff;
+}
+
+.apresentacao{
+	height: 400px;
+	width: 50%;
+    padding: 10px 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-left: 320px;
+    margin-top: 50px;
+    border-radius: 80px 80px 80px 80px ;
+    box-sizing: border-box;
+    border: 5px solid black;
+    float: left;
+    background-color: rgb(28,28,28, 0.9);
+}
+
+.apresentacao p{
+	text-align: left;
+	font-size: 18px;
+}
+
+#aviso{
+	text-align: center;
+	font-size: 16px;
+}
+
+button{
+	width: 100px;
+	height: 35px;
+	margin: 0 20px;
+	border: none;
+	outline: none;
+	color: #000;
+	background: #fff;
+	border-radius: 20px;
+	transition: 0.4s;
+	font-size: 18px;
+}
+
+button:hover{
+	cursor: pointer;
+	background: #ff4d4d;
+	transition: 0.4s;
+}
+
+a:link{
+	text-decoration:none;
+}
+
+.confirmacao{
+	height:250px;
+	width: 50%;
+    padding: 10px 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-left: 320px;
+    margin-top: 150px;
+    border-radius: 80px 80px 80px 80px ;
+    box-sizing: border-box;
+    border: 5px solid black;
+    float: left;
+    background-color: rgb(28,28,28, 0.9);
+}
+
+#aviso2{
+	text-align: center;
+	font-size: 25px;
+}
+/*
+Comentario
+*/

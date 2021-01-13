@@ -1,0 +1,7 @@
+DB name: id13081936_projeto_login
+
+DB user: id13081936_flavio002
+
+DB host: localhost
+
+senha: asdf3210

@@ -1,0 +1,218 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(Imagens/coding-on-laptop.jpg) no-repeat center fixed;
+	-moz-background: cover;
+	background-size: cover;
+	font-family: "Arial";
+}
+/*Definitr as propriedades do topo*/
+*{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Arial';
+}
+
+/*Formatacao do banner*/
+#Banner{
+	width: 100%;
+	height: 200px;
+	font-family: "Arial";
+	position: relative;
+}
+h3{
+	position: fixed;
+	top: 10%;
+	left: 2%;
+	font-size: 40px;
+	text-decoration: none;
+}
+/*Formatacao do Navegador de Pesquisa*/
+.Navegacao{
+	position: fixed;
+	top: 50%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+}
+
+.Navegacao ul li{
+	list-style-type: none;
+}
+
+.Navegacao input{
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 35px;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+/*Estilo das instrucoes das caixas de texto*/
+::-webkit-input-placeholder {
+   color: #fff;
+}
+:-moz-placeholder {
+   color: #fff;
+}
+
+::-moz-placeholder {
+   color: #fff;
+}
+
+:-ms-input-placeholder {  
+   color: #fff;
+}
+
+.Navegacao img{
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: -10%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.apresentacao a{
+	text-decoration: none;
+}
+
+.apresentacao a:hover{
+	color: #ff4d4d;
+}
+/*Formatacao do menu de Entrar e Cadastrar*/
+#menu_login{
+	margin-left: 70%;
+}
+/*Configuracoes do Menu em geral*/
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #222;
+	margin-top: -4px;
+	margin-bottom: -10px;
+
+}
+	
+.menu > ul{
+	list-style: none;	
+	position: relative;
+	margin-left: 20px;
+}
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	background-color: #222;
+	text-align: center;
+}
+.menu ul ul{
+	list-style: none;
+	position: absolute;
+	visibility: hidden;
+	
+}
+.menu ul li:hover ul{
+	visibility: visible;
+}
+	
+.menu a:hover{
+	background-color: #ff4d4d;
+}
+
+.menu ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+	background-color: #222;
+}
+
+/*Formatacao do menu caso seja usado em um Mobile*/
+#bt_menu{
+	display: none;
+}
+
+label[for='bt_menu']{
+	padding: 5px;
+	background-color: #222;
+	color: #fff;
+	font-family: 'Arial';
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-bottom: -10px;
+	position: relative;
+	z-index: 4
+}	
+label[for='bt_menu']:hover{
+	background-color: #222;
+	color: #aaa;
+	}
+/*Parte para deixar o site responsivo*/
+@media (max-width: 800px){
+	.menu{
+		margin-left: -100%;
+		transition: all .4s;
+		position: absolute;
+		z-index: 4
+	}
+	#Banner{
+		margin-bottom: -5px;
+	}
+	h3{
+		position: absolute;
+		top: 10%;
+		left: 2%;
+		font-size: 40px;
+	}
+	.Navegacao{
+		position: absolute;
+		top: 60%;
+		left: 80%;
+		transform: translate(-50%, -50%);
+	}
+	#menu_login{
+		margin-left: 0;
+	}
+	label[for='bt_menu']{
+		display: block;
+	}
+	.menu > ul{
+		margin-left: 0;
+	}
+	.menu{
+		margin-top: 5px;
+	}
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 200px;
+		transition: all .4s;
+	}
+	#bt_menu:checked ~ .menu{
+		margin-left: 0;
+	}
+}

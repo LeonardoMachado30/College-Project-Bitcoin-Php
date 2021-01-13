@@ -1,0 +1,157 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(Imagens/coding-on-laptop.jpg) no-repeat center fixed;
+	-moz-background: cover;
+	background-size: cover;
+	font-family: "Arial";
+}
+
+.Cadastrar{
+	width: 300px;
+	height: 540px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px 20px;
+	border: 2px solid black;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+	background: rgb(28,28,28, 0.6);
+}
+
+h1{
+	margin-top: -5px;
+	color: white;
+}
+
+#banner{
+	width: 130px;
+	height: 130px;
+	top: -44px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.Cadastrar a {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 28px;
+	color: #fff;
+	transition: 0.2s;
+}
+
+.Cadastrar a:hover{
+	transition: 0.2s;
+	color: #ff4d4d;
+}
+
+.Cadastrar p{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+input{
+	width: 100%;
+	margin-bottom: 6%;
+}
+/*concertar o bug do email*/
+input[type="text"], input[type="password"], input[type="email"] {
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	color: white;
+	font-size: 16px;
+	padding-left: 2px;
+}
+
+input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 30px;
+	color: #000;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.4s;
+	font-size: 16px;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	background: #ff4d4d;
+	transition: 0.4s;
+}
+
+input[type="reset"] {
+	border: none;
+	outline: none;
+	height: 30px;
+	color: #000;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.4s;
+	font-size: 16px;
+}
+
+input[type="reset"]:hover {
+	cursor: pointer;
+	background: #ff4d4d;
+	transition: 0.4s;
+}
+
+/*Estilo das instrucoes das caixas de texto*/
+::-webkit-input-placeholder {
+   color: rgba(255,255,255);
+}
+:-moz-placeholder {
+   color: rgba(255,255,255);
+}
+
+::-moz-placeholder {
+   color: rgba(255,255,255);
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255,255,255);
+}
+
+/*Estilo da mensagem de Erro*/
+.Msg_estrutura{
+	width: 85%;
+	height: 20px;
+	margin: 10px auto;
+	background-color: transparent;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 0px;
+	border-radius: 10px 10px 10px 10px;
+	border: 1px solid rgb(220,220,220);
+	padding-bottom: 12px;
+}
+
+.Msg_estrutura p{
+	font-size: 14px;
+}
+
+#corVermelho{
+	border: 3px solid rgb(255,0,0, 0.7);
+}
+
+#corAmarelo{
+	border: 3px solid rgb(255,255,0, 0.7);
+}
+#corVerde{
+	border: 3px solid rgb(0,255,0, 0.7);
+}
+/*Estilo da mensagem de aviso*/
